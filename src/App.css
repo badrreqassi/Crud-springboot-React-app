@@ -1,16 +1,9 @@
 .App {
   text-align: center;
+ 
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  background-color:  #2596BE
 }
 
 .App-header {
@@ -24,15 +17,114 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.cadr{
+  margin-left: 20%;
+  }
+table{
+  border-spacing: 0.5rem;
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  border-bottom: 1px solid #999;
+  padding: 0.5rem;
+}
+tr:hover{
+  background-color: rgba(156, 191, 245, 0.616);
+}
+th{
+background-color: rgb(142, 175, 236);
+background-color: rgb(33, 79, 105);
+
+}
+button{
+  border: 0;
+  border-radius: 20px;
+  width: 80%;
+  height: 60%;
+  font-family:  monospace;
+  color: white;
+  background-color: rgb(171, 171, 202);
+}
+button:hover{
+  color: red;
+}
+h2{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 50px;
+}
+.navbar{
+  
+  background-color: #282c34;
+  position: absolute;
+  top: 0%;
+  width: 20%;
+  height: 100vh;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul{
+  margin: 0%;
+  padding: 0%;
+  margin-top: 50px;
+  text-align: center;
+  justify-content: center;
+}
+li{
+
+  list-style: none;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+  font-family:  Arial, sans-serif;
+  font-size: 20px;
+  height: 40px;
+}
+li:hover{
+background-color: rgba(156, 191, 245, 0.616);
+border-left: 2px solid #050f22;
+}
+.divb{
+width: fit-content;
+  height: fit-content;
+}
+.cancelB,.saveB{
+  margin-top: 15px;
+  margin-bottom: 15px;
+border: none;
+border-radius: 20%;
+width: 80px;
+height: 50px;
+font-family: monospace;
+font-size: 20px;
+margin-left: 10px;
+}
+.cancelB:hover{
+  color: green;
+}
+fieldset{
+  width: 40%;
+  height: fit-content;
+  margin-left: 40%;
+  position: relative;
+  border: 3px solid white;
+ 
+}
+legend{
+  font-size: 30px;
+  font-family: 'Arial Narrow', Arial, sans-serif;
+  color: white;
+}
+label{
+  font-family:  monospace;
+  font-size: 20px;
+  position: absolute;
+  left: 5%;
+  
+}
+input{
+ width: 50%;
+ height: 25px;
+ margin-bottom: 10px;
 }
