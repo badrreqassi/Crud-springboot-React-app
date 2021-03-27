@@ -17,8 +17,9 @@ class ListUser extends Component {
         )
         console.log(this.state.users)
     }
-    handleUpdate=(id)=>{
- console.log(id)
+    handleGetId=(id)=>{
+ 
+ this.props.history.push(`/updateuser${id}`)
     }
     handleDelete=(id)=>{
         ServiceUser.deleteuser(id).then(
@@ -58,7 +59,7 @@ class ListUser extends Component {
                         <td>{user.email}</td>
                         <td>{user.salary}</td>
                         <td> 
-                            <button onClick={()=>this.handleUpdate(user.id)}> Update </button>
+                            <button onClick={()=>this.handleGetId(user.id)}> Update </button>
                             <button onClick={()=>this.handleDelete(user.id)}> Delete </button>
                         
                         </td>

@@ -8,6 +8,7 @@ import AddUser from './ADDuser';
 
 import ListUser from './Listuser';
 import Navbar from './navBar';
+import UpdateUser from './Updateuser';
 
 
 class User extends Component {
@@ -23,6 +24,7 @@ class User extends Component {
                 <Navbar/>
                 <Route path="/" exact component={ListUser}></Route>
                 <Route path="/adduser" component={AddUser}></Route>
+                <Route path="/updateuser:id" component={UpdateUser}></Route>
 
 
 
